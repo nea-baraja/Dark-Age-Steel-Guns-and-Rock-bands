@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="236af578-08bc-4278-ab57-c700ab114515">
+  <Properties>
+    <Name>LOC_DARKAGE_NAME</Name>
+    <Description>LOC_DARKAGE_DESCRIPTION</Description>
+    <Teaser>LOC_DARKAGE_TEASER</Teaser>
+    <Authors>errt</Authors>
+	 <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+
+  <InGameActions>
+       <UpdateDatabase id="Pre">
+     <Properties><LoadOrder>28197</LoadOrder></Properties>  
+         <Criteria>PRE</Criteria>  
+        <File>DA_PreProcess.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Units">
+     <Properties><LoadOrder>28198</LoadOrder></Properties>  
+         <Criteria>UNIT</Criteria>  
+        <File>DA_Unit_Abilities.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Victories">
+     <Properties><LoadOrder>28199</LoadOrder></Properties>  
+         <Criteria>VICTORY</Criteria>  
+        <File>DA_Victories.sql</File> 
+    </UpdateDatabase> 
+
+
+    <UpdateDatabase id="Requirements"> <!--后移-->
+     <Properties><LoadOrder>28400</LoadOrder></Properties>  
+         <Criteria>REQUIREMENT</Criteria>  
+        <File>DA_Requirements.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Terrains">
+     <Properties><LoadOrder>28292</LoadOrder></Properties>  
+         <Criteria>TERRAIN</Criteria>  
+        <File>DA_Terrains_and_Features.sql</File> 
+    </UpdateDatabase> 
+ 
+    <UpdateDatabase id="Global">
+      <Properties><LoadOrder>28293</LoadOrder></Properties>  
+      <Criteria>GLOBAL</Criteria>  
+        <File>DA_Global_Parameters.sql</File> 
+    </UpdateDatabase> 
+
+
+    <UpdateDatabase id="Resources">
+    <Properties><LoadOrder>28294</LoadOrder></Properties>  
+      <Criteria>RESOURCE</Criteria>  
+        <File>DA_Resources.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Buildings">
+    <Properties><LoadOrder>28295</LoadOrder></Properties>  
+      <Criteria>BUILDING</Criteria>  
+        <File>DA_Buildings.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Districts">
+    <Properties><LoadOrder>28296</LoadOrder></Properties>  
+      <Criteria>DISTRICT</Criteria>  
+        <File>DA_Districts.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Units">
+    <Properties><LoadOrder>28297</LoadOrder></Properties>  
+      <Criteria>UNIT</Criteria>  
+        <File>DA_Units.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Improvements">
+    <Properties><LoadOrder>28298</LoadOrder></Properties>  
+      <Criteria>IMPROVEMENT</Criteria>  
+        <File>DA_Improvements.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="CityPolicies">
+    <Properties><LoadOrder>28299</LoadOrder></Properties>  
+      <Criteria>CITYPOLICY</Criteria>  
+        <File>DA_City_Policies.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Events">
+    <Properties><LoadOrder>28300</LoadOrder></Properties>  
+      <Criteria>EVENT</Criteria>  
+        <File>Events/DA_Event_Data.sql</File> 
+    </UpdateDatabase> 
+
+    <UpdateDatabase id="Nontifications">
+    <Properties><LoadOrder>28301</LoadOrder></Properties>
+      <Criteria>NONTIFICATION</Criteria>
+        <File>DA_Nontifications.sql</File>
+    </UpdateDatabase>
+
+    <UpdateDatabase id="Policies">
+    <Properties><LoadOrder>28302</LoadOrder></Properties>
+      <Criteria>POLICY</Criteria>
+        <File>DA_Policies.sql</File>
+    </UpdateDatabase>
+
+    <UpdateDatabase id="Beliefs">
+    <Properties><LoadOrder>28303</LoadOrder></Properties>
+      <Criteria>BEILEF</Criteria>
+        <File>DA_Beliefs.sql</File>
+    </UpdateDatabase>
+
+    <UpdateDatabase id="Religions">
+    <Properties><LoadOrder>28303</LoadOrder></Properties>
+      <Criteria>RELIGION</Criteria>
+        <File>DA_Religions.sql</File>
+    </UpdateDatabase>
+
+    <UpdateDatabase id="Major">
+    <Properties><LoadOrder>28304</LoadOrder></Properties>
+      <Criteria>MAJOR</Criteria>
+        <File>MajorCivs/DA_Egypt.sql</File>
+    </UpdateDatabase>
+
+    <UpdateDatabase id="GREATPEOPLE">
+    <Properties><LoadOrder>28305</LoadOrder></Properties>
+      <Criteria>GREATPEOPLE</Criteria>
+        <File>DA_Great_People.sql</File>
+    </UpdateDatabase>
+
+    <UpdateDatabase id="Happiness">
+    <Properties><LoadOrder>28306</LoadOrder></Properties>
+      <Criteria>HAPPINESS</Criteria>
+        <File>DA_Happiness.sql</File>
+    </UpdateDatabase>
+
+    <UpdateDatabase id="Post">
+    <Properties><LoadOrder>30000</LoadOrder></Properties>
+      <Criteria>POST</Criteria>
+        <File>MajorCivs/DA_China_Post.sql</File>
+    </UpdateDatabase>
+
+    <UpdateText id="CityPolicies">
+    <Properties><LoadOrder>28400</LoadOrder></Properties>
+      <Criteria>CITYPOLICY</Criteria>
+        <File>Texts/DA_Text_City_Policies.sql</File>
+    </UpdateText>
+
+    <UpdateText id="Nontifications">
+    <Properties><LoadOrder>28401</LoadOrder></Properties>
+      <Criteria>NONTIFICATION</Criteria>
+        <File>Texts/DA_Text_Nontifications.sql</File>
+    </UpdateText>
+
+    <UpdateText id="Buildings">
+    <Properties><LoadOrder>28402</LoadOrder></Properties>
+      <Criteria>BUILDING</Criteria>
+        <File>Texts/DA_Text_Buildings.sql</File>
+    </UpdateText>
+
+    <UpdateText id="Policies">
+    <Properties><LoadOrder>28402</LoadOrder></Properties>
+      <Criteria>POLICY</Criteria>
+        <File>Texts/DA_Text_Policies.sql</File>
+    </UpdateText>
+
+    <UpdateText id="Major">
+    <Properties><LoadOrder>28403</LoadOrder></Properties>
+      <Criteria>MAJOR</Criteria>
+        <File>Texts/DA_Text_Civilizations.sql</File>
+    </UpdateText>
+
+    <UpdateText id="Beliefs">
+    <Properties><LoadOrder>28403</LoadOrder></Properties>
+      <Criteria>BELIEF</Criteria>
+        <File>Texts/DA_Text_Beliefs.sql</File>
+    </UpdateText>
+    <UpdateText id="Victories">
+    <Properties><LoadOrder>28404</LoadOrder></Properties>
+      <Criteria>VICTORY</Criteria>
+        <File>Texts/DA_Text_Victories.sql</File>
+    </UpdateText>
+    <UpdateText id="GREATPEOPLE">
+    <Properties><LoadOrder>28405</LoadOrder></Properties>
+      <Criteria>GREATPEOPLE</Criteria>
+        <File>Texts/DA_Text_GreatPeople.sql</File>
+    </UpdateText>  
+
+    <UpdateText id="Happiness">
+    <Properties><LoadOrder>28406</LoadOrder></Properties>
+      <Criteria>HAPPINESS</Criteria>
+        <File>Texts/DA_Text_Happiness.sql</File>
+    </UpdateText> 
+
+    <AddGameplayScripts id="Function">
+      <Properties>
+        <LoadOrder>28199</LoadOrder>
+      </Properties>
+      <File>lua/DA_Test.lua</File>
+    </AddGameplayScripts>
+    <AddGameplayScripts id="Function">
+      <Properties>
+        <LoadOrder>28199</LoadOrder>
+      </Properties>
+      <File>lua/DA_Misc.lua</File>
+    </AddGameplayScripts>
+    <AddGameplayScripts id="Function">
+      <Properties>
+        <LoadOrder>28200</LoadOrder>
+      </Properties>
+      <File>lua/DA_Barbarian_Conversion.lua</File>
+    </AddGameplayScripts>
+      <AddGameplayScripts id="Function">
+      <Properties>
+        <LoadOrder>28200</LoadOrder>
+      </Properties>
+      <File>lua/DA_Policies.lua</File>
+    </AddGameplayScripts>
+      <AddGameplayScripts id="Function">
+      <Properties>
+        <LoadOrder>28200</LoadOrder>
+      </Properties>
+      <File>lua/DA_GreatPeople.lua</File>
+    </AddGameplayScripts>
+      <AddGameplayScripts id="Religions">
+      <Properties>
+        <LoadOrder>28200</LoadOrder>
+      </Properties>
+      <File>lua/DA_Religion.lua</File>
+    </AddGameplayScripts>
+    <ImportFiles id="Events">
+      <Properties>
+        <LoadOrder>28201</LoadOrder>
+      </Properties>
+      <File>lua/DA_StateUtils.lua</File>
+    </ImportFiles>
+    <AddUserInterfaces id="GreatPersonCompetition">
+      <Properties>
+        <Context>InGame</Context>
+        <LoadOrder>28202</LoadOrder>
+      </Properties>
+      <File>lua/DA_GreatPerson_Competition.xml</File>
+    </AddUserInterfaces>
+    <ImportFiles id="GreatPersonCompetition">
+      <Properties><LoadOrder>28203</LoadOrder></Properties>
+      <File>lua/DA_GreatPerson_Competition.lua</File>
+    </ImportFiles>
+    <AddUserInterfaces id="Property">
+      <Properties>
+        <Context>InGame</Context>
+        <LoadOrder>28203</LoadOrder>
+      </Properties>
+      <File>lua/DA_Property_Requirements.xml</File>
+    </AddUserInterfaces>
+    <ImportFiles id="Property">
+      <Properties><LoadOrder>28203</LoadOrder></Properties>
+      <File>lua/DA_Property_Requirements.lua</File>
+    </ImportFiles>
+    <AddGameplayScripts id="Post">
+      <Properties>
+        <LoadOrder>28204</LoadOrder>
+      </Properties>
+      <File>lua/DA_China_Dynasty.lua</File>
+    </AddGameplayScripts>
+    <AddGameplayScripts id="Victories">
+      <Properties>
+        <LoadOrder>28204</LoadOrder>
+      </Properties>
+      <File>lua/DA_Victories.lua</File>
+    </AddGameplayScripts>
+
+    <UpdateIcons id="CityPolicies" >
+      <Properties><LoadOrder>101</LoadOrder></Properties>
+      <File>Icons/DA_Icon_Citypolicies.sql</File>
+    </UpdateIcons>
+
+    <UpdateArt id="art">
+    <Properties><LoadOrder>102</LoadOrder></Properties>
+      <File>DA.dep</File>
+    </UpdateArt>
+
+    <UpdateIcons id="Nontifications">
+      <Properties><LoadOrder>101</LoadOrder></Properties>
+      <File>Icons/DA_Icon_Notifications.sql</File>
+    </UpdateIcons>
+
+    <ReplaceUIScript id="UI">
+      <Properties>
+        <LoadOrder>100</LoadOrder>
+        <LuaContext>TopPanel</LuaContext>
+        <LuaReplace>lua/TopPanel_DA.lua</LuaReplace>
+      </Properties>
+    </ReplaceUIScript>
+
+
+</InGameActions>
+
+<!--============================================= -->
+
+
+
+
+
+ <Files>
+        <File>DA_Unit_Abilities.sql</File> 
+        <File>DA_Victories.sql</File> 
+        <File>DA_Policies.sql</File>
+        <File>Texts/DA_Text_Policies.sql</File>
+        <File>DA_Requirements.sql</File> 
+        <File>DA_Terrains_and_Features.sql</File> 
+        <File>DA_Global_Parameters.sql</File> 
+        <File>DA_Resources.sql</File> 
+        <File>DA_Buildings.sql</File> 
+        <File>DA_Districts.sql</File> 
+        <File>DA_Units.sql</File> 
+        <File>DA_Improvements.sql</File> 
+        <File>DA_City_Policies.sql</File> 
+        <File>DA_Beliefs.sql</File>
+        <File>DA_Religions.sql</File>
+        <File>DA_Happiness.sql</File>
+        <File>MajorCivs/DA_Egypt.sql</File>
+        <File>Texts/DA_Text_City_Policies.sql</File>
+        <File>Texts/DA_Text_GreatPeople.sql</File>
+        <File>Texts/DA_Text_Buildings.sql</File>
+        <File>Texts/DA_Text_Beliefs.sql</File>
+        <File>Texts/DA_Text_Victories.sql</File>
+        <File>Texts/DA_Text_Happiness.sql</File>
+        <File>lua/DA_Test.lua</File>
+        <File>Texts/DA_Text_Civilizations.sql</File>
+        <File>lua/DA_Barbarian_Conversion.lua</File>
+        <File>Events/DA_Event_Data.sql</File> 
+        <File>lua/DA_StateUtils.lua</File>
+        <File>DA_Nontifications.sql</File>
+        <File>Texts/DA_Text_Nontifications.sql</File>
+        <File>lua/DA_Misc.lua</File>
+        <File>lua/DA_GreatPerson_Competition.xml</File>
+        <File>lua/DA_GreatPerson_Competition.lua</File>
+        <File>lua/DA_Property_Requirements.xml</File>
+        <File>lua/DA_Property_Requirements.lua</File>
+        <File>lua/DA_Policies.lua</File>
+        <File>lua/DA_Religion.lua</File>
+        <File>MajorCivs/DA_China_Post.sql</File>
+        <File>lua/DA_China_Dynasty.lua</File>
+        <File>Icons/DA_Icon_Citypolicies.sql</File>
+        <File>lua/DA_Victories.lua</File>
+        <File>DA.dep</File>
+        <File>Platforms/MacOS/BLPs/darkage.blp</File>
+        <File>Platforms/Windows/BLPs/darkage.blp</File>
+        <File>ArtDefs/Units.artdef</File>
+        <File>DA_PreProcess.sql</File> 
+        <File>Texts/DA_Text_GreatPeople.sql</File>
+        <File>DA_Great_People.sql</File>
+        <File>lua/DA_GreatPeople.lua</File>
+        <File>Icons/DA_Icon_Notifications.sql</File>
+        <File>lua/TopPanel_DA.lua</File>
+
+  </Files>
+  <LocalizedText>
+    <Text id="LOC_DARKAGE_NAME">
+      <en_US>[COLOR_FLOAT_SCIENCE]Dark Age：Steel, Guns and Rock bands[ENDCOLOR]</en_US>
+      <zh_Hans_CN>[COLOR_FLOAT_SCIENCE]黑暗时代：钢铁，枪炮和摇滚乐队[ENDCOLOR]</zh_Hans_CN>
+    </Text>
+
+    <Text id="LOC_DARKAGE_DESCRIPTION">
+    <en_US>null</en_US>
+    <zh_Hans_CN>null</zh_Hans_CN>
+    </Text>
+  </LocalizedText>
+ <!-- <UpdateText id="Districts">
+    <Properties><LoadOrder>28293</LoadOrder></Properties>
+      <Criteria>DISTRICT</Criteria>
+        <File>Texts/SGA_Texts_Districts.xml</File>
+    </UpdateText>  -->
+
+</Mod>
